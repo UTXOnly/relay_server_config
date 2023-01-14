@@ -18,8 +18,8 @@ sudo apt update -y
 # Check installation is successful by checking verions
 docker --version
 
-
-git clone https://github.com/UTXOnly/sudo_user_create.git
+cd /home/$USER
+#git clone https://github.com/UTXOnly/sudo_user_create.git
 # Clone `nostream` repo
 git clone https://github.com/UTXOnly/relayer
 
