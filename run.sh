@@ -9,7 +9,7 @@ read domain_name
 sudo apt update -y
 
 # Install nodejs, npm, nginx, certbot
-sudo apt install nginx certbot python3-certbot-nginx -y
+sudo apt install nginx certbot python3-certbot-nginx net-tools -y
 
 
 
