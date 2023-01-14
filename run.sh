@@ -26,7 +26,7 @@ git clone https://github.com/UTXOnly/relayer
 
 cd relayer
 pwd
-
+sudo usermod -aG docker $USER
 # Delete the default nginx settings file
 sudo rm -rf /etc/nginx/sites-available/default
 
