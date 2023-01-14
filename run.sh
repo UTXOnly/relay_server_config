@@ -13,12 +13,11 @@ sudo apt install nginx certbot python3-certbot-nginx -y
 
 
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose -y
+sudo apt-get install docker.io docker-compose -y
 sudo apt update -y
 # Check installation is successful by checking verions
 docker --version
-npm --version
-node --version
+
 
 git clone https://github.com/UTXOnly/sudo_user_create.git
 # Clone `nostream` repo
@@ -26,6 +25,7 @@ git clone https://github.com/UTXOnly/relayer
 
 cd relayer
 pwd
+sudo groupadd docker
 sudo usermod -aG docker $USER
 # Delete the default nginx settings file
 sudo rm -rf /etc/nginx/sites-available/default
