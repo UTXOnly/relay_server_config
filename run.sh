@@ -3,7 +3,7 @@ BRed='\033[1;31m'
 BGreen='\033[1;32m'
 NC='\033[0m' # No Color
 
-echo -e "${BGreen}Please enter the subdomain for your relay${NC}"
+echo -e "${BGreen}Please enter the domain name for your relay${NC}"
 read domain_name
 # Update deps
 sudo apt update -y
@@ -19,12 +19,8 @@ sudo apt update -y
 docker --version
 
 cd /home/$USER
-#git clone https://github.com/UTXOnly/sudo_user_create.git
-# Clone `nostream` repo
-git clone https://github.com/UTXOnly/relayer
 
-cd relayer
-pwd
+
 sudo groupadd docker
 sudo usermod -aG docker $USER
 # Delete the default nginx settings file
